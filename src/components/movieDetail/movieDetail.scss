@@ -1,0 +1,87 @@
+@import "../../common/colors.scss";
+.font-sec {
+  color: $font-secondary;
+}
+.movie-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 79.6vh;
+  padding: 15px;
+  position: relative;
+
+  .img-section {
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+
+    img {
+      border: 5px solid white;
+      border-right: 10px solid white;
+      border-left: 10px solid white;
+    }
+  }
+  .left-section {
+    margin-left: 30px;
+    flex: 3;
+    min-height: 500px;
+
+    .movie-title {
+      text-align: center;
+      background: linear-gradient(
+        to right,
+        transparent,
+        rgba(255, 255, 255, 0.171),
+        transparent
+      );
+      h2 {
+        color: $font-secondary;
+        text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.493);
+      }
+    }
+    .span-start {
+      font-weight: bold;
+      color: white;
+    }
+    .span-blue {
+      color: $font-secondary;
+    }
+    .movie-details {
+      .movie-plot {
+        text-align: start;
+        width: 70%;
+        padding: 5px 20px;
+        p {
+          text-shadow: 2px 2px 1px black;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 670px) {
+  .movie-section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 850px) {
+  .movie-section {
+  }
+  .left-section {
+    margin-left: 5px !important;
+  }
+  .movie-plot {
+    width: 100% !important;
+  }
+}
+.movie-section::before {
+  content: "";
+  position: absolute;
+  background-image: url(https://img.freepik.com/premium-vector/moroccan-zellige-pattern-with-geometric-shapes-beautiful-colors_274845-1567.jpg);
+  opacity: 0.007;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
