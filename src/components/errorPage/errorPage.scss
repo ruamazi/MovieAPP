@@ -1,0 +1,30 @@
+.error-page {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .h1-container {
+    width: 700px;
+    text-align: center;
+    h1 {
+      background: linear-gradient(
+        to right,
+        transparent,
+        rgba(255, 0, 0, 0.44),
+        transparent
+      );
+    }
+  }
+
+  .back-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    button:hover {
+      background-color: rgb(27, 200, 125);
+      color: rgb(0, 0, 0);
+    }
+  }
+}
