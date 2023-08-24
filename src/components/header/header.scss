@@ -1,0 +1,43 @@
+@import "../../common/colors.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    to right,
+    transparent,
+    $secondary-color,
+    transparent
+  );
+  height: 65px;
+  padding: 0 40px;
+
+  .logo {
+    color: rgba(255, 255, 255, 0.837);
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+  }
+  .logo:hover {
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.745);
+  }
+
+  .logo-link:visited {
+    color: inherit;
+  }
+  .user-image {
+  }
+  .user-image img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  .user-image img:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+}
