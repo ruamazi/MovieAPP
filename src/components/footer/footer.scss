@@ -1,0 +1,40 @@
+@import "../../common//colors.scss";
+
+.footer {
+  position: relative;
+  background: linear-gradient(
+    to right,
+    transparent,
+    $secondary-color,
+    transparent
+  );
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $font-primary;
+  flex-direction: column;
+  h5 {
+    margin: 5px 0 5px 0;
+  }
+  p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+}
+.wts-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+.wts-icon {
+  width: 20px;
+  height: 20px;
+}
+.copyright-text {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
